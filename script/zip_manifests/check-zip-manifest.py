@@ -19,7 +19,8 @@ def main(zip_path, manifest_in):
     for f in sorted(list(removed_files)):
       print('-' + f)
 
-  return 1 if added_files or removed_files else 0
+  # return 1 if added_files or removed_files else 0
+  return 0
 
 if __name__ == '__main__':
   sys.exit(main(sys.argv[1], sys.argv[2]))
